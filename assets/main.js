@@ -1,5 +1,5 @@
-$('document').ready(function(){
-    $('#click me').click(function() {
-        console.log('Button was clicked');
-    });
-});
+$('document').ready(function () {
+	$('#click-me').click(function () {
+		console.log('Button was clicked')
+	})
+})
