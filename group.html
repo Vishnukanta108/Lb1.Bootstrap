@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LB1</title>
+	<title>Add instrument</title>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
 		type="text/css" />
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -14,7 +14,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 	<script src="data.js"></script>
-	<script src="my.js"></script>
+	<script src="group.js"></script>
 </head>
 
 <body>
@@ -24,25 +24,18 @@
 	<div class="container mt-3">
 		<div class="row">
 			<div class="col">
-				<a class="btn btn-outline-success" href="group.html">
-					<i class="fa fa-fw fa-plus"></i>
-				</a>
-			</div>
-		</div>
-		<div class="row mt-2">
-			<div class="col">
-				<table class="table">
-					<thread>
-						<tr>
-							<th scope="col" style="width: 60%">Instrument</th>
-							<th scope="col" style="width: 40%"></th>
-							</th>
-						</tr>
-					</thread>
+				<form>
+					<div class="form-group">
+						<label for="number">Instrument</label>
+						<input type="text" class="form-control" id="number" placeholder="Instrument name">
+					</div>
 
-					<tbody id="groups">
-					</tbody>
-				</table>
+					<div class="form-group">
+						<label for="faculty">Musical Instruments Company</label>
+						<input type="text" class="form-control" id="faculty" placeholder="Company`s name">
+					</div>
+					<button type="button" id="save" class="btn btn-secondary">Save</button>
+				</form>
 			</div>
 		</div>
 	</div>
